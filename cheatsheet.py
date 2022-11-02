@@ -52,7 +52,7 @@ dict #weist Werten andere Werte zu
 ##Listen-Operationen
 my_list = [] #leere Liste erstellen
 my_list = [1, 2, 3] #Liste erstellen
-my_list.append(4) #hängt 4an Liste an
+my_list.append(4) #hängt 4 an Liste an
 #-> my_list ist jetzt [1, 2, 3, 4]
 my_list.remove(2) #entfernt die erste 2
 #-> [1, 3, 4]
@@ -124,7 +124,7 @@ for current_value in range(0, 10):
     print(current_value)
 
 ##erweiterte for-Schleife
-names = ["Anna", "Bertag", "Carl", "David"]
+names = ["Anna", "Ben", "Carl", "David"]
 for person in names:
     print(person)
 #output:
