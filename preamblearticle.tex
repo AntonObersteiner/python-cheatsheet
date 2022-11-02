@@ -1,0 +1,15 @@
+\usepackage{multicol}
+\usepackage{titlesec}
+
+%left, before, after
+\titlespacing*{\section}
+	{0pt}{0.5ex}{-1ex}
+\titlespacing*{\subsection}
+	{0pt}{0.5ex}{-1.2ex}
+\setlength{\columnseprule}{.8pt}
+\def\columnseprulecolor{\color{codegray}}
+\newcommand\cheat[3]{
+	%\paragraph{#1} {\phantom.} \\
+	%not needed, as [sub]sections are already printed
+	\cheatpage{#2}{#3}
+}

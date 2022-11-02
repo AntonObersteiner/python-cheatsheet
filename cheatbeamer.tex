@@ -1,0 +1,25 @@
+\documentclass{beamer}
+
+\input{preamble.tex}
+\input{def.tex}
+
+\newcommand\cheat[3]{
+	\begin{frame}{#1}
+		\cheatpage{#2}{#3}
+	\end{frame}
+}
+\setcounter{tocdepth}{1}
+
+\begin{document}
+
+\begin{frame}
+\maketitle
+\end{frame}
+
+\begin{frame}
+\tableofcontents
+\end{frame}
+
+\input{segments.tex}
+
+\end{document}
