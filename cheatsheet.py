@@ -183,7 +183,7 @@ except:
     print("das hat nicht geklappt.")
     
 """ Dictionaries """
-## dictionaries anlegen
+## dictionary anlegen
 # leeres dictionary anlegen
 car = {}
 # bereits gefülltes dictionary anlegen
@@ -202,7 +202,7 @@ print( car["previous_owners"] ) # -> ["Anna", "Ben"]
 car["miles"] = 10500 # fügt den key "miles" mit dem value 10500 ein
 car["year"] = 2000   # überschreibt den value im key "year"
 
-## über dictioanries iterieren
+## über dictionary iterieren
 for key in car:
     print(key)  
 # "brand"
@@ -240,18 +240,18 @@ git diff # git geänderte/neue Zeilen seit dem letzten commit aus
 ## Datein tracken
 git add my_file.py # added die Datei 'my_file.py' in den Staging-Bereich
 git add . # added alle neuen/veränderten Datein in den Staging-Bereich
-git commit -m "aussagekräftige commit-message" # erstellt einen Commit mit den Datein aus dem staging Bereich. Gibt eine Commit message mit, die genau beschreibt was du verändert hast
+git commit -m "aussagekräftige commit-message" # erstellt einen Commit mit den Datein aus dem Staging-Bereich. Gibt eine commit message mit, die genau beschreibt was du verändert hast
 
 ## Mergen
 git merge anderer_branch # merged den branch 'anderer_branch' in den branch auf dem ich gerade bin
-# bei merge-Konfliketen wird angezeigt in welchen Datein Konflikte sind (falls nicht, dann mal git status aufrufen)
+# bei merge-Konfliketen wird angezeigt in welchen Datein Konflikte sind (falls nicht, mal git status aufrufen)
 # die Datein mit einem Editor öffnen und manuell den 'incoming' oder 'current' change akzeptieren. (macht sich blöd in der Konsole)
-# GOOGELN!! Merge Konflikte sind unschön, deshalb nicht hektisch reagieren und alle fehlermeldungen googeln
+# GOOGELN!! Merge-Konflikte sind unschön, deshalb nicht hektisch reagieren und alle Fehlermeldungen googeln
 
 ## remtote Repositories
 # Repositories können auch im Internet zb. auf GitHub oder GitLab gehosted werden
 git clone url_to_repository # macht euch eine lokale Kopie in das aktuelle Verzeichnis
-git branch -r # gibt alle branches die Remote getrackt werden aus. Manchmal aber auch NICHT! Dann nicht verzagen und trotzdem mal git checkout branch_name probieren!
+git branch -r # gibt alle branches die remote getrackt werden aus. Manchmal aber auch NICHT! Dann nicht verzagen und trotzdem mal git checkout branch_name probieren!
 git pull # downloaded die neuesten Änderungen vom Server. Bevor du pullst, solltest du selbst committed haben um Konflikte zu vermeiden
 git push # uploaded deine Änderungen auf den Server. Sicherheitshalber vorher mal pullen!
 git fetch # dowloaded Metadaten wie neue Branches aber läd nicht aktiv Datein runter
